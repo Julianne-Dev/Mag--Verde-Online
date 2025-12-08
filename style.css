@@ -176,6 +176,10 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+ 
+
+
+    
 }
 
 .card-item {
@@ -202,7 +206,7 @@ h3 {
 
 .card-item h4 {
     color: #012e23;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .lista-eventos {
