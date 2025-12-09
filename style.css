@@ -176,6 +176,10 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+ 
+
+
+    
 }
 
 .card-item {
@@ -202,7 +206,7 @@ h3 {
 
 .card-item h4 {
     color: #012e23;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .lista-eventos {
@@ -222,6 +226,14 @@ h3 {
 
 .lista-eventos li:last-child {
     border-bottom: none;
+}
+
+.lista-eventos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .alerta-risco {
@@ -636,4 +648,36 @@ footer {
     background-color: #fbeae9; /* Fundo rosa claro para destaque */
     border: 1px solid #c72e23;
     display: none; /* Escondido por padrão */
+}
+
+/* --- Estilos para Botões de Admin (Editar/Excluir) --- */
+.admin-actions {
+    display: none; /* Oculto por padrão */
+    margin-top: 15px;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Mostra os botões quando o admin está logado */
+.admin-view .admin-actions {
+    display: flex;
+}
+
+.admin-actions button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.admin-actions .btn-editar {
+    background-color: #FFC107; /* Amarelo */
+    color: #012119;
+}
+
+.admin-actions .btn-excluir {
+    background-color: #c72e23; /* Vermelho de alerta */
+    color: white;
 }
